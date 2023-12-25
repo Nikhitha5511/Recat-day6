@@ -1,0 +1,88 @@
+body{
+  margin:0;
+  
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blue;
+  color:white;
+  width:100%;
+  height:80px;
+}
+
+h2{
+  text-align: center;
+}
+
+.itemCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:220px;
+}
+
+.itemCard img{
+  width:130px;
+  height:130px;
+}
+
+.itemDeatails{
+margin-left: -180px;
+text-align: center;
+} 
+
+.updateButtons{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.delButton{
+border:none;
+border-radius: 5px;
+padding:7px;
+background-color: bisque;
+}
+
+.content{
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+  gap:250px;
+
+}
+.clearButton{
+  border:none;
+  border-radius: 6px;
+  background-color: blue;
+  color:white;
+  padding:6px;
+  font-weight: bold;
+}
+
+hr{
+  width:700px;
+  color:blanchedalmond;
+}
+.incButton{
+  color:white;
+  background: rgb(164, 164, 218);
+  border:none;
+  
+}
+.decButton{
+  color:white;
+  background-color: rgb(224, 133, 133);
+  border:none;
+}
+.fas{
+  font-size: 600;
+}
