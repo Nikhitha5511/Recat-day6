@@ -36,7 +36,7 @@ const Body=({image,title,price,updateTotalAmount,index, removeItem,updateTotalQu
                 <div class='updateButton'>
                 <button className='incButton' onClick={increaseQuantity}>+</button>
                     <p>{quantity}</p>
-                    <button className='decButton' onClick={decreaseQuantity}>-</button>
+                    <button className='decButtons' onClick={decreaseQuantity}>-</button>
                 </div>
                    
                 </div>

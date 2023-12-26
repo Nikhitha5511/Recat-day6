@@ -7,7 +7,7 @@ const Footer=({totalAmount,clearCart})=>{
             <hr></hr>
             <div className='content'>
                 <p className='total'>Total</p>
-                <button className='clearButton' onClick={clearCart} >Clear cart</button>
+                <button className='clearButtons' onClick={clearCart} >Clear cart</button>
                 <p className='amounttotal'>₹{totalAmount}</p>
             </div>
         </div>

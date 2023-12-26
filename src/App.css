@@ -61,7 +61,7 @@ background-color: bisque;
   gap:250px;
 
 }
-.clearButton{
+.clearButtons{
   border:none;
   border-radius: 6px;
   background-color: blue;
@@ -84,7 +84,7 @@ hr{
   height:26px;
   
 }
-.decButton{
+.decButtons{
   color:white;
   background-color: rgb(224, 133, 133);
   border:none;
@@ -102,7 +102,7 @@ hr{
   font-family: arial;
   color:rgb(235, 98, 98);
 }
-.cartCount {
+.cartCounts {
   position: absolute;
   top: -8px;
   right: -8px;
@@ -132,5 +132,5 @@ hr{
   border:none;
 }
 .total{
-  font-size: 22px;
+  font-size: 23px;
 }

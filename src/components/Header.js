@@ -7,7 +7,7 @@ const Header=({totalQuantity})=>{
         <header>
                 <h2>Ecommerce</h2>
                 <i className="fas fa-shopping-cart"></i>
-                {totalQuantity > 0 && <span className="cartCount">{totalQuantity}</span>}
+                {totalQuantity > 0 && <span className="cartCounts">{totalQuantity}</span>}
             </header>
     )
 }
