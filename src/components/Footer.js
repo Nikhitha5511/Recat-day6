@@ -1,24 +1,14 @@
-import React,{useState} from 'react';
+import React from 'react';
 
-const Footer=()=>{
-    const [amount, setAmount] = useState(100); // Initial amount
-
-    const incrementAmount = () => {
-      setAmount(amount + 1);
-    };
+const Footer=({totalAmount,clearCart})=>{
   
-    const decrementAmount = () => {
-      if (amount > 0) {
-        setAmount(amount - 1);
-      }
-    };
     return(
         <div className='footer'>
             <hr></hr>
             <div className='content'>
-                <p>Total</p>
-                <button className='clearButton' onIncrement={incrementAmount} onDecrement={decrementAmount}>Clear cart</button>
-                <p>{amount}</p>
+                <p className='total'>Total</p>
+                <button className='clearButton' onClick={clearCart} >Clear cart</button>
+                <p className='amounttotal'>₹{totalAmount}</p>
             </div>
         </div>
     )

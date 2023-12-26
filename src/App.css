@@ -19,30 +19,32 @@ h2{
 }
 
 .itemCard{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap:220px;
+  display:flex;
+  justify-content: space-around;
 }
+  
 
 .itemCard img{
   width:130px;
   height:130px;
+  margin-left: 150px;
+  margin-bottom: 10px;
 }
 
 .itemDeatails{
 margin-left: -180px;
 text-align: center;
-} 
+margin-left: -700px;
+}  
 
-.updateButtons{
+ .updateButton{
   display: flex;
-  flex-direction:column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
+  margin-left: -650px;
+  
+ }
 
 .delButton{
 border:none;
@@ -66,23 +68,69 @@ background-color: bisque;
   color:white;
   padding:6px;
   font-weight: bold;
+  padding:6px;
 }
 
 hr{
-  width:700px;
+  width:1000px;
   color:blanchedalmond;
 }
 .incButton{
   color:white;
   background: rgb(164, 164, 218);
   border:none;
+  margin: 10px;
+  width:26px;
+  height:26px;
   
 }
 .decButton{
   color:white;
   background-color: rgb(224, 133, 133);
   border:none;
+  margin: 10px;
+  width:26px;
+  height:26px;
 }
 .fas{
-  font-size: 600;
+  font-size:45px;
+}
+
+.message{
+  text-align: center;
+  font-size: 28px;
+  font-family: arial;
+  color:rgb(235, 98, 98);
+}
+.cartCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color:rgb(232, 232, 232);
+  color: blue;
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right:414px;
+  margin-top: 19px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 1px;
+}
+.amounttotal{
+  width:120px;
+  height:25px;
+  background-color: blue;
+  color:white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding:4px;
+  border:none;
+}
+.total{
+  font-size: 22px;
 }

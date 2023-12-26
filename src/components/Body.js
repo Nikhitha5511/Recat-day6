@@ -1,19 +1,27 @@
 import React,{useState} from 'react';
-import {useEffect} from 'react';
-const Body=({image,title,price})=>{
+
+const Body=({image,title,price,updateTotalAmount,index, removeItem,updateTotalQuantity })=>{
     const [quantity, setQuantity] = useState(1);
-    const [totalCost, setTotalCost] = useState(0);
-
-
 
    const increaseQuantity = () => {
     setQuantity(quantity + 1);
+    updateTotalAmount(parseInt(price.replace(/[₹,]/g, ''), 10));
+    handleQuantityChange(1);
   };
 
   const decreaseQuantity = () => {
     if (quantity > 1) {
       setQuantity(quantity - 1);
+      updateTotalAmount(-parseInt(price.replace(/[₹,]/g, ''), 10)); 
+      handleQuantityChange(-1);
+
     }
+  };
+  const handleRemove = () => {
+    removeItem(index);
+  };
+  const handleQuantityChange = (change) => {
+    updateTotalQuantity((prevQuantity) => prevQuantity + change);
   };
     return(
         <div className='bodyContainer'>
@@ -23,14 +31,16 @@ const Body=({image,title,price})=>{
                 <div className='itemDeatails'>
                     <h3>{title}</h3>
                     <p>{price}</p>
-                    <button className='delButton'>Remove</button>
+                    <button className='delButton' onClick={handleRemove}>Remove</button>
                 </div>
-                <div classname='updateButtons'>
-                    <button className='incButton' onClick={increaseQuantity}>+</button>
+                <div class='updateButton'>
+                <button className='incButton' onClick={increaseQuantity}>+</button>
                     <p>{quantity}</p>
                     <button className='decButton' onClick={decreaseQuantity}>-</button>
                 </div>
-            </div>
+                   
+                </div>
+            
             </main>
            
         </div>
